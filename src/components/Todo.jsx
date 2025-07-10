@@ -28,7 +28,7 @@ const Todo = () => {
 
     // Yeni görev nesnesi oluştur
     const newTodo = {
-      id: todos.length + 1,   // id olarak mevcut uzunluğa +1 veriyoruz
+      id: Date.now(),   // id olarak mevcut uzunluğa +1 veriyoruz
       text: inputText,        // görev metni
       isComplete: false,      // başlangıçta tamamlanmamış
     };
